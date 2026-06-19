@@ -1,0 +1,148 @@
+body {
+  background-color: rgb(36, 42, 49);
+  color: aliceblue;
+  margin: 0;
+}
+main {
+  display: flex;
+  height: 99vh;
+}
+.peoples {
+  width: 20%;
+  border: solid 1px rgb(0, 148, 0);
+  height: 100%;
+}
+.chats {
+  width: 60%;
+  border: solid 1px rgb(0, 148, 0);
+  height: 100%;
+  background-color: rgb(36, 42, 49);
+
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.chats > div {
+  display: block;
+}
+
+.stickers {
+  width: 20%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(20, max-content);
+  gap: 16px;
+  border: solid 1px rgb(0, 148, 0);
+  height: 100%;
+}
+
+.stickers img {
+  width: 100%;
+  height: auto;
+}
+
+div {
+  margin: 10px 5px;
+  display: flex;
+  gap: 10px;
+  border: solid 1px rgb(0, 148, 0);
+  border-radius: 30px;
+}
+img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.red-background {
+  background-color: rgba(255, 48, 48, 0.534);
+}
+
+.purple-background {
+  background-color: rgb(120, 10, 223);
+}
+
+.aqua-background {
+  background-color: aqua;
+}
+
+.chocolate-background {
+  background-color: chocolate;
+}
+
+.ping-background {
+  background-color: deeppink;
+}
+
+.message {
+  justify-self: start;
+
+  background-color: deeppink;
+}
+
+.message1 {
+  justify-self: end;
+  background-color: rgb(120, 10, 223);
+}
+
+.message,
+.message1 {
+word-break: break-all;
+  padding: 5px 20px;
+  display: flex;
+  align-items: center;
+  min-width: 15%;
+}
+
+.panel {
+  border-radius: 30px;
+  padding: 10px;
+  width: 90%;
+  height: 50px;
+  background-color: dimgrey;
+  color: aliceblue;
+  resize: none;
+}
+
+.panel::placeholder {
+  color: aliceblue;
+}
+
+.message-wrap {
+}
+
+.sent-button {
+  border: none;
+  background-color: transparent;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  transition: transform 10s ease-in;
+}
+
+.sent-button:active img {
+  transform: scale(0.9);
+}
+
+.sent-button-active {
+  border: none;
+  background-color: transparent;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  transition: transform 10s ease-in;
+}
+
+.sent-button-active img {
+  transform: scale(0.9);
+}
+
+.chats > .panel-button {
+  display: flex;
+  align-items: center;
+}
+
+.chats > div.dialog-header {
+  height: 50px;
+  display: flex;
+}
