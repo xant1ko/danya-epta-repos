@@ -19,6 +19,9 @@ document.addEventListener('keydown', (event) => {
     }
 })
 
+// куралесю куралесю куралесю куралесю куралесю куралесю куралесюкуралесю
+
+
 document.addEventListener('keyup', (event) =>{
     if (event.key == 'Enter') {
         sendButton.classList = 'sent-button'
